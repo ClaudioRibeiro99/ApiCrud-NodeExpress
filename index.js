@@ -18,7 +18,7 @@ const personRoutes = require('./routes/personRoutes')
 app.use('/person', personRoutes)
 
 const dbUser = process.env.DB_USER
-const dbPassword = 'FdyRht49WlNfhZf4'//process.env.DB_PASSWORD
+const dbPassword = process.env.DB_PASSWORD
 
 mongoose
     .connect(
